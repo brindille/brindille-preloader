@@ -6,7 +6,7 @@
   "author": "Valentin Daguenet <valentin.daguenet@gmail.com>",
   "contributors": [{
     "name": "Guillaume Gouessan",
-    "email": "guillaume@hellohikimori.com"
+    "email": "guillaume.gouessan@gmail.com"
   }],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
