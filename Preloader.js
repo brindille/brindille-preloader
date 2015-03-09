@@ -1,6 +1,6 @@
 'use strict';
 
-var PxLoader = require('PxLoader');
+var PxLoader = require('pxloader');
 var inherits = require('inherits');
 var Emitter = require('emitter-component');
 var Q = require('q');
@@ -31,10 +31,10 @@ Preloader.prototype.load = function(manifest) {
     this._loader.addCompletionListener(_handleComplete.bind(this));
     this._loader.addProgressListener(_handleProgress.bind(this));
 
-    for(var i = 0, l = manifest.length; i < l; i++) {
-        if(manifest[i].src.match(IMAGE_PATTERN)) this.addImage(manifest[i]);
-        if(manifest[i].src.match(SOUND_PATTERN)) this.addSound(manifest[i]);
-        if(manifest[i].src.match(VIDEO_PATTERN)) this.addVideo(manifest[i]);
+    for (var i = 0, l = manifest.length; i < l; i++) {
+        if (manifest[i].src.match(IMAGE_PATTERN)) this.addImage(manifest[i]);
+        if (manifest[i].src.match(SOUND_PATTERN)) this.addSound(manifest[i]);
+        if (manifest[i].src.match(VIDEO_PATTERN)) this.addVideo(manifest[i]);
     }
 
     this._loader.start();
@@ -104,8 +104,8 @@ Preloader.prototype.getVideo = function(id) {
  * Handle preload progression
  * @param  {Object} e
  */
-function _handleProgress (e) {
-    if(e.error || e.timeout) {
+function _handleProgress(e) {
+    if (e.error || e.timeout) {
         _handleError.call(this, e);
         return;
     }
@@ -117,7 +117,7 @@ function _handleProgress (e) {
  * Handle preload errors and reject promise
  * @param  {Object} e
  */
-function _handleError (e) {
+function _handleError(e) {
     this._deferred.reject();
     this.emit('error', e);
 }
@@ -126,18 +126,18 @@ function _handleError (e) {
  * Handle preload complete and resolve promise
  * @param  {Object} e
  */
-function _handleComplete (e) {
+function _handleComplete(e) {
     var res = [];
 
-    for(var i in this.imagesContent) {
+    for (var i in this.imagesContent) {
         res[i] = this.imagesContent[i];
     }
 
-    for(var j in this.soundsContent) {
+    for (var j in this.soundsContent) {
         res[j] = this.soundsContent[j];
     }
 
-    for(var k in this.videosContent) {
+    for (var k in this.videosContent) {
         res[k] = this.videosContent[k];
     }
 

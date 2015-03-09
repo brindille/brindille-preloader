@@ -1,10 +1,8 @@
 # brindille-preloader
 
-Promise or event based preloader using PxLoader
+Promise or event based preloader using [PxLoader](https://github.com/thinkpixellab/PxLoader)
 
 ## Install
-**WARNING: installation with npm will be available when PxLoader will be on npm.**
-
 With [npm](http://npmjs.org) do:
 
 ```bash

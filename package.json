@@ -1,16 +1,21 @@
 {
   "name": "brindille-preloader",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Promise or event based preloader using PxLoader",
   "main": "Preloader.js",
-  "author": "Valentin Daguenet <valentin.daguenet@gmail.com>",
-  "contributors": [{
-    "name": "Guillaume Gouessan",
-    "email": "guillaume.gouessan@gmail.com"
-  }],
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "author": {
+    "name": "Valentin Daguenet",
+    "email": "valentin.daguenet@gmail.com",
+    "url": "https://github.com/vdaguenet"
   },
+  "contributors": [
+    {
+      "name": "Guillaume Gouessan",
+      "email": "guillaume.gouessan@gmail.com",
+      "url": "https://github.com/superguigui"
+    }
+  ],
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/brindille/brindille-preloader.git"
@@ -25,6 +30,7 @@
   "dependencies": {
     "emitter-component": "^1.1.1",
     "inherits": "^2.0.1",
+    "pxloader": "^1.0.0",
     "q": "^1.2.0"
   },
   "bugs": {
