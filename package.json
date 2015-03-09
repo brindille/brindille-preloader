@@ -1,6 +1,6 @@
 {
   "name": "brindille-preloader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Promise or event based preloader using PxLoader",
   "main": "Preloader.js",
   "author": {
@@ -30,7 +30,7 @@
   "dependencies": {
     "emitter-component": "^1.1.1",
     "inherits": "^2.0.1",
-    "pxloader": "^1.0.0",
+    "pxloader-browserify": "^1.0.1",
     "q": "^1.2.0"
   },
   "bugs": {

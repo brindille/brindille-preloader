@@ -1,6 +1,6 @@
 'use strict';
 
-var PxLoader = require('pxloader');
+var PxLoader = require('pxloader-browserify');
 var inherits = require('inherits');
 var Emitter = require('emitter-component');
 var Q = require('q');
