@@ -6,7 +6,7 @@ var Emitter = require('emitter-component');
 var Q = require('q');
 
 // regexp to know which kind of file is in manifest
-var IMAGE_PATTERN = /([a-z\-_0-9\/\:\.]*\.(jpg|jpeg|png|gif))/gi;
+var IMAGE_PATTERN = /([a-z\-_0-9\/\:\.]*\.(jpg|jpeg|png|gif|svg))/gi;
 var VIDEO_PATTERN = /([a-z\-_0-9\/\:\.]*\.(mp4|mov|webm|ogv))/gi;
 var SOUND_PATTERN = /([a-z\-_0-9\/\:\.]*\.(mp3|wav))/gi;
 
