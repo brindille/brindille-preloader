@@ -2,7 +2,7 @@
   "name": "brindille-preloader",
   "version": "2.0.0",
   "description": "Promise or event based preloader using PxLoader",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "author": {
     "name": "Valentin Daguenet",
     "email": "valentin.daguenet@gmail.com",
@@ -16,7 +16,7 @@
     }
   ],
   "scripts": {
-    "compile": "babel -d lib/ src/",
+    "compile": "babel -d dist/ src/",
     "prepublish": "npm run compile"
   },
   "repository": {
