@@ -1,6 +1,6 @@
 {
   "name": "brindille-preloader",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "Promise or event based preloader using PxLoader",
   "main": "lib/index.js",
   "author": {
